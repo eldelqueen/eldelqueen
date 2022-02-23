@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Bulb on/off</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function light(show) {
+            //body...
+            var pic;
+            if (show==0) {
+                pic= "pic_bulboff.jpg";
+            }
+            else{
+                pic="pic_bulbon.jpg";
+            }
+            document.getElementById('bulb').src = pic
+        }
+    </script>
+ </body>
+    <h1>Bulb on/off</h1>
+    <p>Here, a Javascript chages the values of the source attribute of an images.</p>
+
+    <centre>
+
+    <img id="bulb" src="pic_bulboff.jpg" width="100px" height="180px">
+    <p>
+        <button type="button" onclick="light(1)">LIGHT ON</button>
+        <BUtton type="button" onclick="light(0)">LIGHT OFF</BUtton>
+        </p>
+
+    </centre>
+    </html>
